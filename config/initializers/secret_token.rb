@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Pago::Application.config.secret_key_base = '4dfc89fe010797eb9dfecfa5355324e7297a82869bf1566efd18cc59f941baa4f7dc5e35f5c2f16b9bd9ef7984b420f3985b0fa2e9ad2217a19ce67be57fcdf4'
+Pagos::Application.config.secret_key_base = '4dfc89fe010797eb9dfecfa5355324e7297a82869bf1566efd18cc59f941baa4f7dc5e35f5c2f16b9bd9ef7984b420f3985b0fa2e9ad2217a19ce67be57fcdf4'

@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  livemode: false
+  amount: 1
+  captured: false
+  currency: MyString
+  paid: false
+  refunded: false
+  amount_refunded: 1
+  balance_transaction: MyString
+  description: MyText
+  failure_code: MyString
+  failure_message: MyString
+  card_id: 
+
+two:
+  livemode: false
+  amount: 1
+  captured: false
+  currency: MyString
+  paid: false
+  refunded: false
+  amount_refunded: 1
+  balance_transaction: MyString
+  description: MyText
+  failure_code: MyString
+  failure_message: MyString
+  card_id: 

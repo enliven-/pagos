@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Pago::Application.load_tasks
+Pagos::Application.load_tasks

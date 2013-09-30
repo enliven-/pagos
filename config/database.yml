@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: utf8
-  database: pago_dev1
+  database: pagos_dev1
   username: postgres
   password: postgres
   host: localhost
@@ -9,7 +9,7 @@ development:
 test:
   adapter: postgresql
   encoding: utf8
-  database: pago_test1
+  database: pagos_test1
   username: postgres
   password: postgres
   host: localhost
