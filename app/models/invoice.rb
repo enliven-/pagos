@@ -12,7 +12,7 @@ class Invoice < ActiveRecord::Base
   scope :unpaid, -> { where(state: 0) }
   
   belongs_to :customer
-  belongs_to :vendor
+  belongs_to :merchant
   
   has_many :items
   

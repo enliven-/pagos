@@ -1,11 +1,11 @@
-class CreateVendors < ActiveRecord::Migration
+class Createmerchants < ActiveRecord::Migration
   def change
-    create_table :vendors do |t|
+    create_table :merchants do |t|
       t.string :token
 
       t.timestamps
     end
     
-    add_index :vendors, :token, unique: true
+    add_index :merchants, :token, unique: true
   end
 end

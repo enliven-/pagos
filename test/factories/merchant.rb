@@ -1,4 +1,4 @@
 FactoryGirl.define do
-  factory :vendor do
+  factory :merchant do
   end
 end

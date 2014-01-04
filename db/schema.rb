@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 20140102143649) do
   add_index "customers", ["token"], name: "index_customers_on_token", unique: true
 
   create_table "invoices", force: true do |t|
-    t.integer  "vendor_id"
+    t.integer  "merchant_id"
     t.integer  "customer_id"
     t.string   "token"
     t.string   "balance_due"
@@ -52,18 +52,18 @@ ActiveRecord::Schema.define(version: 20140102143649) do
   add_index "invoices", ["token"], name: "index_invoices_on_token", unique: true
 
   create_table "items", force: true do |t|
-    t.integer  "vendor_id"
+    t.integer  "merchant_id"
     t.integer  "invoice_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "vendors", force: true do |t|
+  create_table "merchants", force: true do |t|
     t.string   "token"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "vendors", ["token"], name: "index_vendors_on_token", unique: true
+  add_index "merchants", ["token"], name: "index_merchants_on_token", unique: true
 
 end

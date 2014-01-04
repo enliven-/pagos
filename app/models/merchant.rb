@@ -1,4 +1,4 @@
-class Vendor < ActiveRecord::Base
+class Merchant < ActiveRecord::Base
   
   has_many :customers, through: :invoices
   has_many :invoices

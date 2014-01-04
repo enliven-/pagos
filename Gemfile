@@ -50,7 +50,8 @@ gem "factory_girl_rails", "~> 4.3.0"
 gem 'twitter-bootstrap-rails'
 gem 'less-rails'
 gem 'devise'
-gem 'stripe'
+gem 'stripe', git: 'https://github.com/stripe/stripe-ruby'
+#gem 'activemerchant'
 
 # this is bad, should be removed in future
 gem 'therubyracer'

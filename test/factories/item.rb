@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :item do
-    vendor
+    merchant
     invoice
   end
 end

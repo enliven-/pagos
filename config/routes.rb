@@ -15,7 +15,7 @@ Rails.application.routes.draw do
     end
   end
   
-  # resources :vendors do
+  # resources :merchants do
 #     resources :invoices
 #   end
   
