@@ -1,0 +1,15 @@
+<table class="table table-condensed">
+	<tr>
+		<th>Due at</th>
+		<th>Balance Due</th>
+	</tr>
+	<% for invoice in invoices %>
+		<%= content_tag :tr do %>
+			<td><%= invoice.due_at %></td>
+			<td><%= invoice.balance_due %></td>
+			<% if invoice.unpaid? %>
+				<td><%= link_to "Pay", pay_invoice_path(invoice), method: :post %></td>
+			<% end %>
+		<% end %>
+	<% end %>
+</table>

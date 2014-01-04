@@ -1,4 +1,24 @@
-Pagos::Application.routes.draw do
+Rails.application.routes.draw do
+  devise_for :customers
+  
+  resources :customers do
+    resources :invoices do
+      # collection do
+#         get :customer_invoices
+#       end
+    end
+  end
+  
+  resources :invoices do
+    member do
+      post :pay
+    end
+  end
+  
+  # resources :vendors do
+#     resources :invoices
+#   end
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -39,7 +59,7 @@ Pagos::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
