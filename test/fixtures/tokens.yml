@@ -1,9 +1,0 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
-
-one:
-  livemode: false
-  used: false
-
-two:
-  livemode: false
-  used: false
